@@ -28,3 +28,11 @@ void ListaContigua::set(int p, int val)
         return;
     vet[p] = val;
 }
+
+void ListaContigua::newEnd(int val)
+{
+    if(n>=max)
+        return;
+    vet[n]=val;
+    n++;
+}
