@@ -36,3 +36,10 @@ void ListaContigua::newEnd(int val)
     vet[n]=val;
     n++;
 }
+
+void ListaContigua::deleteEnd()
+{
+    if(n==0)
+        return;
+    n--;
+}
