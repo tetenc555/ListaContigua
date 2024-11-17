@@ -43,3 +43,13 @@ void ListaContigua::deleteEnd()
         return;
     n--;
 }
+
+void ListaContigua::newNode(int p, int val)
+{
+    if(p<0 || p>=n || n==max)
+        cout << "Invalido" << endl; //nao fiz separado por preguica, tinha esquecido de verificar se estava cheio
+        return;
+    for (int i=p;i<n;i++)
+        vet[i+1]=vet[i];
+    vet[p]=val;
+}
