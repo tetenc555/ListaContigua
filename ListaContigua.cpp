@@ -5,9 +5,9 @@ using namespace std;
 
 ListaContigua::ListaContigua(int max)
 {
-    max=max;
-    n=0;
-    vet=new int [max];
+    this->max=max;
+    this->n=0;
+    this->vet=new int [max];
 }
 
 ListaContigua::~ListaContigua()
